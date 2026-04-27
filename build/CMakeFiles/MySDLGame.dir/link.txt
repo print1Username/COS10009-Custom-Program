@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\MySDLGame.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\MySDLGame.dir/objects.a @CMakeFiles\MySDLGame.dir\objects1.rsp
+C:\msys64\ucrt64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\MySDLGame.dir/objects.a -Wl,--no-whole-archive -o C:\Users\User\Documents\GitHub\COS10009-Custom-Program\bin\MySDLGame.exe -Wl,--out-implib,C:\Users\User\Documents\GitHub\COS10009-Custom-Program\bin\libMySDLGame.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\MySDLGame.dir\linkLibs.rsp
