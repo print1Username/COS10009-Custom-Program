@@ -1,3 +1,0 @@
-C:/Users/User/Documents/GitHub/COS10009-Custom-Program/build/CMakeFiles/MySDLGame.dir
-C:/Users/User/Documents/GitHub/COS10009-Custom-Program/build/CMakeFiles/edit_cache.dir
-C:/Users/User/Documents/GitHub/COS10009-Custom-Program/build/CMakeFiles/rebuild_cache.dir

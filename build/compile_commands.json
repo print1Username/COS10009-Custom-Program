@@ -1,8 +1,0 @@
-[
-{
-  "directory": "C:/Users/User/Documents/GitHub/COS10009-Custom-Program/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/MySDLGame.dir/includes_C.rsp -g -o CMakeFiles\\MySDLGame.dir\\main.c.obj -c C:\\Users\\User\\Documents\\GitHub\\COS10009-Custom-Program\\main.c",
-  "file": "C:/Users/User/Documents/GitHub/COS10009-Custom-Program/main.c",
-  "output": "CMakeFiles/MySDLGame.dir/main.c.obj"
-}
-]
