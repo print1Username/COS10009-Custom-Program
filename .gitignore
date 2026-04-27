@@ -61,7 +61,7 @@ dkms.conf
 .history/
 
 # --- CMake specific ---
-.build/
+build/
 *.cmake/*
 CMakeCache.txt
 CMakeFiles/
