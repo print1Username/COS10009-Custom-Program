@@ -11,8 +11,6 @@ The player who successfully defeats their opponent wins.
 
 Here is the [other resource](#other-resources) for learning.
 
-Quick Start for this project: [Run the program](#method-2-run-the-programme-manually)
-
 ## Recommended Setup (For Beginners)
 
 1. Install MSYS2
