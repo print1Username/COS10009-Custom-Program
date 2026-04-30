@@ -21,13 +21,14 @@ Download and install MSYS2, then open "MSYS2 MinGW64"
 2. Open MSYS2 MinGW64 terminal
 3. Install GCC:
 ```bash
-pacman -S mingw-w64-x86_64-gcc
+pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain
 ```
+Press **Enter** to install all package
 
-4. Run:
+4. In you Powershell or CMD terminal, run:
 ```bash
 # Build exe
-gcc main.c -o ./bin/main.exe -I./include -L./lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf -lSDL2_image -lSDL2_mixer
+gcc main.c -o ./bin/main.exe -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf -lSDL2_image -lSDL2_mixer
 # Run exe file
 ./bin/main.exe
 ```
