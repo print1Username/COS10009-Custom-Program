@@ -17,7 +17,7 @@ Here is the [other resource](#other-resources) for learning.
 
 C language project setup can reference here, is more details:
 \
-[C/C++ for Visual Studio Code ](https://code.visualstudio.com/docs/languages/cpp)
+[C/C++ for Visual Studio Code](https://code.visualstudio.com/docs/languages/cpp)
 
 SDL is already included in this GitHub repository, so there is no need to download any additional software.
 
