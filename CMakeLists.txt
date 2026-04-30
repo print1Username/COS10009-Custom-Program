@@ -1,24 +1,18 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(MySDLGame C)
+project(main C)
 
-set(SDL2_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include")
-set(SDL2_LIB_DIR "${CMAKE_CURRENT_SOURCE_DIR}/lib")
+set(CMAKE_C_STANDARD 11)
 
-include_directories(${SDL2_INCLUDE_DIR})
+set(CMAKE_PREFIX_PATH "C:/msys64/ucrt64")
 
-link_directories(${SDL2_LIB_DIR})
+find_package(SDL2 REQUIRED)
 
 file(GLOB SOURCES "*.c")
 
-set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin)
-add_executable(MySDLGame ${SOURCES})
+add_executable(main ${SOURCES})
 
-target_link_libraries(MySDLGame 
-    mingw32 
-    SDL2main 
-    SDL2 
-    SDL2_image 
-    SDL2_ttf 
-    SDL2_mixer
+target_link_libraries(main
+    SDL2::SDL2
+    SDL2::SDL2main
 )
