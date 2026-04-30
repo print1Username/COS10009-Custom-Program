@@ -34,6 +34,8 @@ If you wish to use CMake for automated builds, you may wish to refer to the conf
 ## Launch the Program
 When running this programme, you can choose to use Visual Studio Code to configure the executable file and environment in advance, or you can choose to run it manually.
 
+---
+
 ### Method 1: Configure CMake to let the programme can run in Visual Studio Code
 If we choose to run our programme in Visual Studio Code rather than manually, we need to configure Visual Studio Code.
 
