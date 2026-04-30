@@ -11,7 +11,28 @@ The player who successfully defeats their opponent wins.
 
 Here is the [other resource](#other-resources) for learning.
 
-## Project Setup
+Quick Start for this project: [Run the program](#method-2-run-the-programme-manually)
+
+## Recommended Setup (For Beginners)
+
+1. Install MSYS2
+\
+Download and install MSYS2, then open "MSYS2 MinGW64"
+2. Open MSYS2 MinGW64 terminal
+3. Install GCC:
+```bash
+pacman -S mingw-w64-x86_64-gcc
+```
+
+4. Run:
+```bash
+# Build exe
+gcc main.c -o ./bin/main.exe -I./include -L./lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf -lSDL2_image -lSDL2_mixer
+# Run exe file
+./bin/main.exe
+```
+
+## Project Setup (For Advanced)
 
 ### C Language setup
 
@@ -36,17 +57,24 @@ When running this programme, you can choose to use Visual Studio Code to configu
 
 ---
 
-### Method 1: Configure CMake to let the programme can run in Visual Studio Code
+### Method 1: Configure CMake to run the program in Visual Studio Code
 If we choose to run our programme in Visual Studio Code rather than manually, we need to configure Visual Studio Code.
 
 Firstly, we need to download two extensions: the C/C++ extension and the CMake extension. The C/C++ extension is an official Microsoft extension that allows users to write, install and run C and C++ code within VS Code. As this programme is written in C, we need this extension to assist us.
 
 The CMake extension, meanwhile, makes it easier to ‘configure, compile and manage’ CMake projects within the editor, simplifying the project’s execution.
 
+Build CMake
+```bash
+mkdir build
+cd build
+cmake ..
+cmake --build .
+```
+
 ---
 
 ### Method 2: Run the programme manually
-
 In the terminal where you manually run this programme, you can choose to use the Mingw you just downloaded, or you can run it using Windows’ built-in PowerShell or cmd. There are differences between the two methods.
 
 - GCC
@@ -64,9 +92,24 @@ Run the exe file:
 ./bin/main.exe
 ```
 
-# Other Resources
+## Game Control
+This game has two players: Player 1 and Player 2. Player 1 is on the left and Player 2 is on the right.
+
+Each player has different controls: Player 1 uses WASD to move and the E key to attack; Player 2 uses the arrow keys to move and the Enter key to attack.
+
+Player 1:
+- Move: WASD
+- Attack: E
+
+Player 2:
+- Move: Arrow Keys
+- Attack: Enter
+
+## Other Resources
 [C/C++ for Visual Studio Code](https://code.visualstudio.com/docs/languages/cpp)
 \
 [MSYS2](https://www.msys2.org/)
+\
+[Simple DirectMedia Layer](https://www.libsdl.org/)
 \
 [CMake - Upgrade Your Software](https://cmake.org/)
