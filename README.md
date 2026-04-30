@@ -1,4 +1,4 @@
-# COS10009-Custom-Program
+# COS10009 Custom Program
 ## Introduction
 
 This is a custom project for the COS10009 course. It is a small game written in C Language. The programme also utilises SDL2 as an additional library.
@@ -13,7 +13,7 @@ Here is the [other resource](#other-resources) for learning.
 
 ## Project Setup
 
-### Basic C Language setup
+### C Language setup
 
 C language project setup can reference here, is more details:
 \
@@ -21,9 +21,15 @@ C language project setup can reference here, is more details:
 
 SDL is already included in this GitHub repository, so there is no need to download any additional software.
 
-### CMake Setup'
+### CMake Setup
 
-[](https://code.visualstudio.com/docs/cpp/cmake-quickstart)
+In Visual Studio Code, you can choose CMake to automate the build process.
+
+The CMake deployment files are already included in this GitHub repository, so there is no need to set up any additional files.
+
+If you wish to use CMake for automated builds, you may wish to refer to the configuration guide for CMake in Visual Studio Code.
+
+[Create a CMake hello world project with CMake Quick Start](https://code.visualstudio.com/docs/cpp/cmake-quickstart)
 
 ## Launch the Program
 When running this programme, you can choose to use Visual Studio Code to configure the executable file and environment in advance, or you can choose to run it manually.
@@ -41,12 +47,13 @@ The CMake extension, meanwhile, makes it easier to ‘configure, compile and man
 
 In the terminal where you manually run this programme, you can choose to use the Mingw you just downloaded, or you can run it using Windows’ built-in PowerShell or cmd. There are differences between the two methods.
 
-
+- GCC
 ```Shell
-# GCC
 gcc main.c -o ./bin/main.exe -I./include -L./lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf -lSDL2_image -lSDL2_mixer
+```
 
-# Clang
+- Clang
+```Shell
 clang main.c -o ./bin/main.exe -I./include -L./lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf -lSDL2_image -lSDL2_mixer
 ```
 
@@ -55,9 +62,9 @@ Run the exe file:
 ./bin/main.exe
 ```
 
-
-
 # Other Resources
 [C/C++ for Visual Studio Code](https://code.visualstudio.com/docs/languages/cpp)
+\
 [MSYS2](https://www.msys2.org/)
+\
 [CMake - Upgrade Your Software](https://cmake.org/)
