@@ -1,4 +1,7 @@
 # COS10009 Custom Program
+
+[![CMake on multiple platforms](https://github.com/print1Username/COS10009-Custom-Program/actions/workflows/cmake-multi-platform.yml/badge.svg)](https://github.com/print1Username/COS10009-Custom-Program/actions/workflows/cmake-multi-platform.yml)
+
 ## Introduction
 
 This is a custom project for the COS10009 course. It is a small game written in C Language. The programme also utilises SDL2 as an additional library.
