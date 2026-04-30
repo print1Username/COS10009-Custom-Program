@@ -47,6 +47,10 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: Setup vcpkg
+      if: runner.os == 'Windows'
+      uses: lukka/run-vcpkg@v11
+
     - name: Install SDL2 (Linux)
       if: runner.os == 'Linux'
       run: |
@@ -60,7 +64,7 @@ jobs:
     - name: Install SDL2 (Windows)
       if: runner.os == 'Windows'
       run: |
-        vcpkg install sdl2
+        vcpkg install sdl2 sdl2-image sdl2-ttf sdl2-mixer
         vcpkg integrate install
         
     - name: Set reusable strings
@@ -71,10 +75,9 @@ jobs:
         echo "build-output-dir=${{ github.workspace }}/build" >> "$GITHUB_OUTPUT"
 
     - name: Configure CMake
-      # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
-      # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
       run: >
         cmake -B ${{ steps.strings.outputs.build-output-dir }}
+        -DCMAKE_TOOLCHAIN_FILE=${{ env.VCPKG_ROOT }}/scripts/buildsystems/vcpkg.cmake
         -DCMAKE_CXX_COMPILER=${{ matrix.cpp_compiler }}
         -DCMAKE_C_COMPILER=${{ matrix.c_compiler }}
         -DCMAKE_BUILD_TYPE=${{ matrix.build_type }}
