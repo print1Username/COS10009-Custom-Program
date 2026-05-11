@@ -32,6 +32,7 @@ Press **Enter** to install all package
 gcc main.c -o ./bin/main.exe -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf -lSDL2_image -lSDL2_mixer
 # Run exe file
 ./bin/main.exe
+
 ```
 
 ## Project Setup (For Advanced)
@@ -72,6 +73,7 @@ mkdir build
 cd build
 cmake ..
 cmake --build .
+
 ```
 
 ---
@@ -82,16 +84,19 @@ In the terminal where you manually run this programme, you can choose to use the
 - GCC
 ```Shell
 gcc main.c -o ./bin/main.exe -I./include -L./lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf -lSDL2_image -lSDL2_mixer
+
 ```
 
 - Clang
 ```Shell
 clang main.c -o ./bin/main.exe -I./include -L./lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf -lSDL2_image -lSDL2_mixer
+
 ```
 
 Run the exe file:
 ```Shell
 ./bin/main.exe
+
 ```
 
 ## Game Control
